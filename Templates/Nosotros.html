@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tronic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://assets.stickpng.com/images/5ec40989195c530004f93f05.png">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="https://pngimg.com/uploads/tesla_logo/tesla_logo_PNG18.png" width="60" height="40" class="d-inline-block align-top" alt="">
+
+    </a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'home' %}">INICIO</a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'nosotros' %}">NOSOTROS</a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'contacto' %}">CONTACTO</a>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle py-2 d-none d-md-inline-block text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      PRODUCTOS
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="{% url 'arduinos' %}">Arduinos</a>
+      <a class="dropdown-item" href="{% url 'sensores' %}">Sensores</a>
+      <a class="dropdown-item" href="{% url 'motores' %}">Motores y Servos</a>
+      <a class="dropdown-item" href="{% url 'beaglebone' %}">Beaglebone</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Más</a>
+    </div>
+    </li>
+    <a class="navbar-brand" href="{% url 'login' %}">
+        <img src="https://freepikpsd.com/wp-content/uploads/2019/10/login-logo-png-6.png" width="90" height="40" class="d-inline-block align-top" alt="">
+
+    </a>
+  </div>
+</nav>
+<div class="content container">
+<hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">MISION</h2>
+        <p class="lead" STYLE="text-align: justify">Desarrollamos, producimos y suministramos de forma respetuosa con el medio ambiente soluciones tecnológicas personalizadas al cliente para proveer de componentes electromecánicos y electrónicos a fabricantes de máquinas, aparatos y equipos. Atendemos, entre otros mercados, a los fabricantes de electrodomésticos, material eléctrico, equipos para el ocio, equipos de elevación y transporte y el auxiliar de la automoción en el territorio europeo y norte de África.
+Nuestros productos de precisión han de satisfacer las expectativas de nuestros clientes, permitir remunerar adecuadamente a nuestros colaboradores y nuestros accionistas y garantizar, gracias a nuestro afán de superación, nuestro futuro como equipo humano.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">VISION</h2>
+        <p class="lead" style="text-align: justify">Focalizados en la innovación, desarrollo y creación de valor, en estrecha colaboración con nuestros clientes y sus necesidades, seremos el proveedor de soluciones de refe- rencia en productos personalizados.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">VALORES</h2>
+        <p class="lead" STYLE="text-align: justify">Compromiso con el cliente. Conocer para cada proyecto que desarrollamos para un cliente o un mercado, las necesidades de nuestro cliente o del mercado, hacerlo nuestro y trabajar duro para proporcionarles a nuestros clientes productos y servicios excelentes.
+
+Profesionalidad. Somos ágiles, rigurosos y perseguimos la mejora continua. Fomentamos la efi ciencia y el orden.
+
+Compromiso de resultados. Dirigimos nuestra actuación hacia la consecución de los objetivos económicos del proyecto empresarial y de la rentabilidad de nuestros accionistas
+
+Espíritu de equipo. Creamos un ambiente de trabajo respetuoso, basado en el trabajo en equipo, del desarrollo profesional, la cohesión y la comunicación.
+
+Precisión. Siempre pendientes de la precisión que requiere cada producto, medimos para mejorar.</p>
+      </div>
+      <div class="col-md-5">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+      </div>
+    </div>
+
+</div>
+<br>
+    <footer class="navbar navbar-dark bg-dark site-header sticky-top py-1">
+    <p class="float-right"><a href="{% url 'home' %}">Regresar al inicio</a></p>
+    <p style="color:white">&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+</body>
+</html>

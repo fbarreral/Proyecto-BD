@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tronic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://assets.stickpng.com/images/5ec40989195c530004f93f05.png">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="https://pngimg.com/uploads/tesla_logo/tesla_logo_PNG18.png" width="60" height="40" class="d-inline-block align-top" alt="">
+
+    </a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'home' %}">INICIO</a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'nosotros' %}">NOSOTROS</a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'contacto' %}">CONTACTO</a>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle py-2 d-none d-md-inline-block text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      PRODUCTOS
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="{% url 'arduinos' %}">Arduinos</a>
+      <a class="dropdown-item" href="{% url 'sensores' %}">Sensores</a>
+      <a class="dropdown-item" href="{% url 'motores' %}">Motores y Servos</a>
+      <a class="dropdown-item" href="{% url 'beaglebone' %}">Beaglebone</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Más</a>
+    </div>
+    </li>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle py-2 d-none d-md-inline-block text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      ADMINISTRADOR
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="#">Reporte</a>
+      <a class="dropdown-item" href="{% url 'ingresar_prod' %}">Ingresar Producto</a>
+      <a class="dropdown-item" href="{% url 'listado_prod' %}">Listado Productos</a>
+    </div>
+    </li>
+    <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="https://www.computerhope.com/issues/pictures/logout.jpg" width="90" height="40" class="d-inline-block align-top" alt="">
+
+    </a>
+  </div>
+</nav>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://cdn.wallpapersafari.com/1/94/ekb7Ls.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://www.xtrafondos.com/descargar.php?id=3586&resolucion=1280x768" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://cdn.wallpapersafari.com/42/56/or4AOP.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    <hr class="featurette-divider">
+    <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-4 font-weight-normal">Tronic Store</h1>
+        <p class="lead font-weight-normal">Somos la empresa numero uno en venta y tecnologías de soporte electronico las 24 horas del dia.</p>
+        <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+      </div>
+      <div class="product-device shadow-sm d-none d-md-block"></div>
+      <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+    </div>
+<br>
+    <hr class="featurette-divider">
+<br>
+<div class="content container">
+<div class="row">
+      <div class="col-lg-4">
+        <img class="card-img-top" src="https://i.blogs.es/90d0d7/arduinounosmd450px/500_333.jpg">
+        <center><h2>ARDUINOS</h2></center>
+        <p style="text-align: justify">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+        <p style="text-align: center"><a class="btn btn-secondary" href="{% url 'arduinos' %}" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="card-img-top" src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2018/10/estos-son-todos-sensores-que-tiene-tu-movil-te-contamos-que-sirve-cada_5.jpg?itok=Xiy_9agn">
+        <center><h2>SENSORES</h2></center>
+        <p style="text-align: justify">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+        <p style="text-align: center"><a class="btn btn-secondary" href="{% url 'sensores' %}" role="button">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <img class="card-img-top" src="https://lh3.googleusercontent.com/proxy/ZeiML-_iqrGLAGMJnU4arIGFvjL3eAkO0mIzxt6NVB52MxnvornHQiD1O-pdIfIY7vymFXGfOOR9vfLPyZAlicDmrovE7UQQoT84cdZbeIPI2OBgRh4pyVgHenKgxcu_wgNHI0JJbjhIiw">
+        <center><h2>SERVOMOTORES</h2></center>
+        <p style="text-align: justify">Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <p style="text-align: center"><a class="btn btn-secondary" href="{% url 'motores' %}" role="button">View details &raquo;</a></p>
+      </div>
+    </div>
+</div>
+    <hr class="featurette-divider">
+<br>
+    <footer class="navbar navbar-dark bg-dark site-header sticky-top py-1">
+    <p class="float-right"><a href="{% url 'home' %}">Regresar al inicio</a></p>
+    <p style="color:white">&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+</body>
+
+</html>

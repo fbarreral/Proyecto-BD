@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tronic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://assets.stickpng.com/images/5ec40989195c530004f93f05.png">
+</head>
+
+<nav class="navbar navbar-dark bg-dark site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="https://pngimg.com/uploads/tesla_logo/tesla_logo_PNG18.png" width="60" height="40" class="d-inline-block align-top" alt="">
+
+    </a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'home' %}">INICIO</a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'nosotros' %}">NOSOTROS</a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'contacto' %}">CONTACTO</a>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle py-2 d-none d-md-inline-block text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      PRODUCTOS
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="{% url 'arduinos' %}">Arduinos</a>
+      <a class="dropdown-item" href="{% url 'sensores' %}">Sensores</a>
+      <a class="dropdown-item" href="{% url 'motores' %}">Motores y Servos</a>
+      <a class="dropdown-item" href="{% url 'beaglebone' %}">Beaglebone</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Más</a>
+    </div>
+    </li>
+    <a class="navbar-brand" href="{% url 'login' %}">
+        <img src="https://freepikpsd.com/wp-content/uploads/2019/10/login-logo-png-6.png" width="90" height="40" class="d-inline-block align-top" alt="">
+
+    </a>
+  </div>
+</nav>
+
+<br>
+<div class="content container">
+<center>
+    <h1>Sensores</h1>
+    </center>
+    </div>
+
+
+<div class="content container">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="https://laelectronica.com.gt/image/cache/catalog/Productos/Sensores/sensor-ir-1200x1200.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">SENSOR INFRARROJO DE OBSTACULOS</h5>
+          <p class="card-text" style="text-align: justify">Voltaje de operación: 3.3V ~ 5V DC
+Corriente de operación:  >15 mA
+Distancia de prueba: 1 mm a 25 mm
+Tipo: TCRT50
+Chip: LM393
+Dimensiones: 3.2 x 1.4 cm
+Potenciómetro de control de sensibilidad
+TCRT5000 sensor de reflexión de infrarrojo
+</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://laelectronica.com.gt/image/cache/catalog/Productos/Transistores/Transistor-BJT-NPN-PNP-y-JFET-Categoria-y-Producto-800x800.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">SENSOR DE TEMPERATURA DS18B20+</h5>
+          <p class="card-text" style="text-align: justify">Rango de medición: -55 a 125 grados Centígrados
+Voltaje de operación: 3V - 5.5V DC
+Comunicación de protocolo: 1-Wire
+Resolución programable: de 9  a 12 bits
+Tipo: T0-92</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://laelectronica.com.gt/image/cache/catalog/Productos/Sensores/MC-38-Sensor-Magnetico-1200x1200.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">SWITCH MAGNÉTICO, PAREJA</h5>
+          <p class="card-text" style="text-align: justify">Paso de voltaje máximo : 12V DC
+Paso de corriente máximo : 1 A
+Distancia máxima de operación : 15 mm
+Salida del interruptor: NC (normalmente cerrado).
+Dimensiones : 30 x 15 mm</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="content container">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="https://laelectronica.com.gt/image/cache/catalog/Productos/M%C3%B3dulos/KY-037-1200x1200.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">SENSOR DE SONIDO KY-037</h5>
+          <p class="card-text" style="text-align: justify">TVoltaje de operación: 3.3V a 5V DC
+Salidas: Análoga y digital Dimensiones: 32 x 17 x 8 mm</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://laelectronica.com.gt/image/cache/catalog/Productos/Sensores/Sensor-de-Inclinacion-Producto-1200x1200.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">SENSOR DE INCLINACIÓN</h5>
+          <p class="card-text" style="text-align: justify">Voltaje de alimentación: 24V DC
+Consumo de corriente: < 6 mA
+Vida eléctrica: > 50,000 ciclos
+Resistencia de contacto: 1 Ohm</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+</div>
+    <hr class="featurette-divider">
+<br>
+    <footer class="navbar navbar-dark bg-dark site-header sticky-top py-1">
+    <p class="float-right"><a href="{% url 'home' %}">Regresar al inicio</a></p>
+    <p style="color:white">&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+</body>
+
+</html>

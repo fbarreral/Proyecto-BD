@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tronic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://assets.stickpng.com/images/5ec40989195c530004f93f05.png">
+</head>
+<body>
+
+<nav class="navbar navbar-dark bg-dark site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="https://pngimg.com/uploads/tesla_logo/tesla_logo_PNG18.png" width="60" height="40" class="d-inline-block align-top" alt="">
+
+    </a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'home' %}">INICIO</a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'nosotros' %}">NOSOTROS</a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'contacto' %}">CONTACTO</a>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle py-2 d-none d-md-inline-block text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      PRODUCTOS
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="{% url 'arduinos' %}">Arduinos</a>
+      <a class="dropdown-item" href="{% url 'sensores' %}">Sensores</a>
+      <a class="dropdown-item" href="{% url 'motores' %}">Motores y Servos</a>
+      <a class="dropdown-item" href="{% url 'beaglebone' %}">Beaglebone</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Más</a>
+    </div>
+    </li>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle py-2 d-none d-md-inline-block text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      ADMINISTRADOR
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="#">Reporte</a>
+      <a class="dropdown-item" href="{% url 'ingresar_prod' %}">Ingresar Producto</a>
+      <a class="dropdown-item" href="{% url 'listado_prod' %}">Listado Productos</a>
+    </div>
+    </li>
+    <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="https://www.computerhope.com/issues/pictures/logout.jpg" width="90" height="40" class="d-inline-block align-top" alt="">
+
+    </a>
+  </div>
+</nav>
+
+<br>
+<center><h1>Listado de Productos</h1></center>
+<br>
+<br>
+<div class="content container">
+
+    <div class="list-group col 12">
+  <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+
+
+  <a href="#" class="list-group-item list-group-item-action list-group-item-primary">This is a primary list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">This is a secondary list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-success">This is a success list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-danger">This is a danger list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-warning">This is a warning list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-info">This is a info list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-light">This is a light list group item</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-dark">This is a dark list group item</a>
+</div>
+
+</div>
+
+    <hr class="featurette-divider">
+<br>
+    <footer class="navbar navbar-dark bg-dark site-header sticky-top py-1">
+    <p class="float-right"><a href="{% url 'home' %}">Regresar al inicio</a></p>
+    <p style="color:white">&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+</body>
+
+</html>

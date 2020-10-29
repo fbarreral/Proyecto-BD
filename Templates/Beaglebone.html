@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tronic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://assets.stickpng.com/images/5ec40989195c530004f93f05.png">
+</head>
+
+<nav class="navbar navbar-dark bg-dark site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="https://pngimg.com/uploads/tesla_logo/tesla_logo_PNG18.png" width="60" height="40" class="d-inline-block align-top" alt="">
+
+    </a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'home' %}">INICIO</a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'nosotros' %}">NOSOTROS</a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'contacto' %}">CONTACTO</a>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle py-2 d-none d-md-inline-block text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      PRODUCTOS
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="{% url 'arduinos' %}">Arduinos</a>
+      <a class="dropdown-item" href="{% url 'sensores' %}">Sensores</a>
+      <a class="dropdown-item" href="{% url 'motores' %}">Motores y Servos</a>
+      <a class="dropdown-item" href="{% url 'beaglebone' %}">Beaglebone</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Más</a>
+    </div>
+    </li>
+    <a class="navbar-brand" href="{% url 'login' %}">
+        <img src="https://freepikpsd.com/wp-content/uploads/2019/10/login-logo-png-6.png" width="90" height="40" class="d-inline-block align-top" alt="">
+
+    </a>
+  </div>
+</nav>
+
+<br>
+<div class="content container">
+<center>
+    <h1>Beaglebone</h1>
+    </center>
+    </div>
+
+
+<div class="content container">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="https://dc-images.element14.com/images/devtool/size500/beaglebone_black_development_board_with_1ghz_am335x_arm_cortexa8_processor_500x313_1579632807.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">BEAGLEBONE BLACK</h5>
+          <p class="card-text" style="text-align: justify">Processor: TI Sitara AM3358AZCZ100, 1GHz, 2000 MIPS
+1 GHz ARM®Cortex™-A8
+SGX530 Graphics Engine
+Programmable Real-Time Unit Subsystem
+Memory
+SDRAM: 512MB DDR3L 800MHZ
+Onboard Flash: 4GB, 8bit Embedded MMC (eMMC)
+SD/MMC Connector for microSD
+Power management:TPS65217C PMIC is used along with a separate LDO to provide power to the system
+Debug Support: Optional Onboard 20-pin CTI JTAG, Serial Header
+</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://es.mathworks.com/help//examples/beagleboneblue/win64/xxbeagleboneblue_blink_LED.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">BEAGLEBONE BLUE</h5>
+          <p class="card-text" style="text-align: justify">Octavo systems OSD3358 1Hz ARM cortex-A8, 512MB DDR3 RAM, 4GB flash, 2×32bit PRUs
+2 cell lithium polymer support with balancing, 6V to 16V charger input
+802.11bgn, Bluetooth 4.1 and BLE wireless connectivity
+Eight 6V servo out, four DC motor out, four quad encoder input motor control
+9 axis IMU, barometer
+High speed USB 2.0 client and host connectivity
+GPS, DSM2 radio, UARTs, SPI, I2C, analog, buttons, LEDs connectivity
+Debian, ROS, Ardupilot software compatibility</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://www.okdo.com/us/wp-content/uploads/sites/8/2019/08/BeautyShot_Large-2385.jpg?fit=6888%2C4592&resize=1296,866" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">BEAGLEBONE AI</h5>
+          <p class="card-text" style="text-align: justify">Este SBC de gama alta combina la brecha entre los SBC tradicionales y las placas industriales de servicio pesado con el procesador Cortex-A15 de doble brazo y los coprocesadores Cortex-M4 de doble brazo.
+1 GB de RAM y 16 GB de memoria flash eMMC integrada.
+Conectividad proporcionada por 5GHz/2.4GHz WiFi, Bluetooth y Gigabit Ethernet
+Conectividad de vídeo Micro HDMI</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="content container">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="https://www.kuongshun-ks.com/uploads/201810680/industrial-bb-beaglebone-black58307653233.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">BEAGLEBONE RED</h5>
+          <p class="card-text" style="text-align: justify">Processor: TI Sitara AM3358BZCZA100, 1GHz, 2000 MIPS 1 GHz ARM®Cortex™-A8
+SGX530 Graphics Engine
+Programmable Real-Time Unit Subsystem
+Operating temperature can span from -40C to +85C
+Memory SDRAM: 512MB DDR3L 800MHZ
+Onboard Flash: 4GB, 8bit Embedded MMC (eMMC)
+SD/MMC Connector for microSD
+</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://www.digikey.com/-/media/Images/Product%20Highlights/S/Seeed/BeagleBone%20Green/beaglebone-wireless.jpg?la=en-US&ts=1a7236bc-6515-4b96-a832-9f8fc3b6affd" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">BEAGLEBONE GREEN</h5>
+          <p class="card-text">Processor: AM3358 1 GHz ARM® Cortex-A8
+512 MB DDR3 RAM
+4 GB 8-bit eMMC on-board flash storage
+3D graphics accelerator
+NEON floating-point accelerator
+2x PRU 32-bit microcontrollers
+USB client for power & communications
+4* USB 2.0 host
+Wi-Fi 802.11 b/g/n 2.4 GHz and Bluetooth 4.1 LE
+2x46 pin headers
+2xGrove connectors</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+       <div class="card">
+        <img class="card-img-top" src="https://beagleboard.org/static/images/capes/600px/BeagleBoneMotorCapeA2_Top.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">BEAGLEBONE CAPE</h5>
+          <p class="card-text" style="text-align: justify">USB-to-serial
+USB host
+Reset button
+2 push buttons
+Analog light sensor
+Tri-color LED
+SPI GPIO expander with 2-digit 7-segment display
+I2C Accelerometer</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+</div>
+    <hr class="featurette-divider">
+<br>
+    <footer class="navbar navbar-dark bg-dark site-header sticky-top py-1">
+    <p class="float-right"><a href="{% url 'home' %}">Regresar al inicio</a></p>
+    <p style="color:white">&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+</body>
+
+</html>

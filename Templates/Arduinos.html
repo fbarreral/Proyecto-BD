@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tronic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://assets.stickpng.com/images/5ec40989195c530004f93f05.png">
+</head>
+
+<nav class="navbar navbar-dark bg-dark site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="https://pngimg.com/uploads/tesla_logo/tesla_logo_PNG18.png" width="60" height="40" class="d-inline-block align-top" alt="">
+
+    </a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'home' %}">INICIO</a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'nosotros' %}">NOSOTROS</a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'contacto' %}">CONTACTO</a>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle py-2 d-none d-md-inline-block text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      PRODUCTOS
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="{% url 'arduinos' %}">Arduinos</a>
+      <a class="dropdown-item" href="{% url 'sensores' %}">Sensores</a>
+      <a class="dropdown-item" href="{% url 'motores' %}">Motores y Servos</a>
+      <a class="dropdown-item" href="{% url 'beaglebone' %}">Beaglebone</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Más</a>
+    </div>
+    </li>
+    <a class="navbar-brand" href="{% url 'login' %}">
+        <img src="https://freepikpsd.com/wp-content/uploads/2019/10/login-logo-png-6.png" width="90" height="40" class="d-inline-block align-top" alt="">
+
+    </a>
+  </div>
+</nav>
+
+<br>
+<div class="content container">
+<center>
+    <h1>Arduinos</h1>
+    </center>
+    </div>
+
+
+<div class="content container">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="https://laelectronica.com.gt/image/cache/catalog/Productos/Arduinos/Arduino-Nano-V3.0---Soldado-1200x1200.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">ARDUINO NANO V3.0 CH340 SIN CABLE - SOLDADO</h5>
+          <p class="card-text" style="text-align: justify">Microcontrolador: Atmel ATMEGA328
+Tensión de funcionamiento (nivel lógico): 5 V
+Voltaje de entrada (recomendado): 7 a 12 V
+Pines de E/S digitales: 14 (de los cuales 6 proporcionan salidas PWM)
+Pines de entrada analógica: 8
+Corriente DC por Pin de E/S: 40 mA
+Memoria Flash: 32 KB (ATmega328) de los cuales el gestor de arranque utiliza 2 KB
+SRAM: 2 KB (ATmega328)
+EEPROM: 1 KB (ATmega328)
+Velocidad del reloj: 16 MHz
+Dimensiones: 18.5 x 43.2 mm
+</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://laelectronica.com.gt/image/cache/catalog/Productos/Arduinos/Arduino-Mega-2560-R3-SMD-Producto-1200x1200.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">ARDUINO MEGA 2560 R3 SMD</h5>
+          <p class="card-text" style="text-align: justify">Microcontrolador: ATMEGA2560
+
+Voltaje de funcionamiento: 5V
+
+Voltaje de entrada (recomendado): 7 a 12V
+
+Pines de E/S digitales: 54 (de los cuales 14 proporcionan salidas PWM)
+
+Pines de entrada analógica: 16
+
+Corriente DC por Pin de E/S: 40 mA
+
+Corriente DC para 3.3V Pin: 50 mA
+
+Memoria Flash: 256 KB (ATmega2560) de los cuales el gestor de arranque utiliza 8 KB
+
+SRAM: 8 KB (ATMEGA328)
+
+EEPROM: 4 KB (ATMEGA328)
+
+Velocidad del reloj: 16 MHz
+
+
+
+Incluye cable USB</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://laelectronica.com.gt/image/cache/catalog/Productos/Arduinos/Arduino-Leonardo--R3--1200x1200.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">ARDUINO LEONARDO R3</h5>
+          <p class="card-text" style="text-align: justify">Microcontrolador: ATMEGA32U4
+Voltaje de funcionamiento: 5V
+Voltaje de entrada (recomendado): 7 a 12V
+Pines de E/S digitales: 20 (de los cuales 7 proporcionan salidas PWM)
+Pines de entrada analógica: 12
+Corriente DC por Pin de E/S: 40 mA
+Corriente DC para 3.3V Pin: 50 mA
+Memoria Flash: 32 KB (ATmega32U4) de los cuales el gestor de arranque utiliza 4 KB
+SRAM: 2.5 KB (ATMEGA32U4)
+EEPROM: 1 KB (ATMEGA32U4)
+Velocidad del reloj: 16 MHz</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="content container">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="https://i2.wp.com/electrosparks.com/wp-content/uploads/2020/04/pro_micro.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Arduino Pro Micro</h5>
+          <p class="card-text" style="text-align: justify">The Pro Micro is a ATmega32U4 open source development board. The USB transceiver inside the 32U4 allows us to add USB connectivity on-board and do away with bulky external USB interface.
+9 channels of 10-bit ADC, 5 PWM pins, 12 DIOs Hardware serial connections Rx and Tx. 16MHz and 5V,</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://http2.mlstatic.com/arduino-micro-microcontroladoratmega32u4-D_NQ_NP_731074-MLA40903981649_022020-F.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Arduino Micro</h5>
+          <p class="card-text">Dimensiones: 48x18mm
+Peso: 6.5g
+Microcontrolador: ATmega32u4
+Funcionamiento: 5V
+Alimentación recomedada: 7-12V
+Limites de entrada (max): 6-20V
+Pines I/O totales: 20
+Pines PWM: 7
+Pines analógicos: 12
+Imax de los pines I/O: 40 mA
+Corriente máxima del pin 3.3V: 50 mA
+Memoria flash: 32 KB (4 KB usados por el bootloade)
+SRAM: 2.5 KB
+EEPROM: 1 KB
+Velocidad: 16 MHz</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+</div>
+    <hr class="featurette-divider">
+<br>
+    <footer class="navbar navbar-dark bg-dark site-header sticky-top py-1">
+    <p class="float-right"><a href="{% url 'home' %}">Regresar al inicio</a></p>
+    <p style="color:white">&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+</body>
+
+</html>

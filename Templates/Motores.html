@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tronic</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://assets.stickpng.com/images/5ec40989195c530004f93f05.png">
+</head>
+
+<nav class="navbar navbar-dark bg-dark site-header sticky-top py-1">
+  <div class="container d-flex flex-column flex-md-row justify-content-between">
+    <a class="navbar-brand" href="{% url 'home' %}">
+        <img src="https://pngimg.com/uploads/tesla_logo/tesla_logo_PNG18.png" width="60" height="40" class="d-inline-block align-top" alt="">
+
+    </a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'home' %}">INICIO</a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'nosotros' %}">NOSOTROS</a>
+    <a class="py-2 d-none d-md-inline-block text-white" href="{% url 'contacto' %}">CONTACTO</a>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle py-2 d-none d-md-inline-block text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      PRODUCTOS
+    </a>
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="{% url 'arduinos' %}">Arduinos</a>
+      <a class="dropdown-item" href="{% url 'sensores' %}">Sensores</a>
+      <a class="dropdown-item" href="{% url 'motores' %}">Motores y Servos</a>
+      <a class="dropdown-item" href="{% url 'beaglebone' %}">Beaglebone</a>
+      <div class="dropdown-divider"></div>
+      <a class="dropdown-item" href="#">Más</a>
+    </div>
+    </li>
+    <a class="navbar-brand" href="{% url 'login' %}">
+        <img src="https://freepikpsd.com/wp-content/uploads/2019/10/login-logo-png-6.png" width="90" height="40" class="d-inline-block align-top" alt="">
+
+    </a>
+  </div>
+</nav>
+
+<br>
+<div class="content container">
+<center>
+    <h1>Motores y Servos</h1>
+    </center>
+    </div>
+
+
+<div class="content container">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="https://www.etwinternational.com.ar/public/uploded/3888/b_1-4-3-90-series-ac-servo-motor_01b.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Servomotor de corriente alterna serie 90</h5>
+          <p class="card-text" style="text-align: justify">Microcontrolador: Atmel ATMEGA328
+Tensión de funcionamiento (nivel lógico): 5 V
+Voltaje de entrada (recomendado): 7 a 12 V
+Pines de E/S digitales: 14 (de los cuales 6 proporcionan salidas PWM)
+Pines de entrada analógica: 8
+Corriente DC por Pin de E/S: 40 mA
+Memoria Flash: 32 KB (ATmega328) de los cuales el gestor de arranque utiliza 2 KB
+SRAM: 2 KB (ATmega328)
+EEPROM: 1 KB (ATmega328)
+Velocidad del reloj: 16 MHz
+Dimensiones: 18.5 x 43.2 mm
+</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://logitek.es/wp-content/uploads/2015/03/Motores1.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">SERVOMOTOR DE CORRIENTE CONTINUA</h5>
+          <p class="card-text" style="text-align: justify">Conmutación sinusoidal con encoder EnDat o ​​resolver como unidad de respuesta.
+Bobinado con conexión en estrella trifásica.
+Poco peso gracias a tamaños compactos.
+Mínimo momento de inercia gracias a los resultados favorables de la construcción del rotor, manteniendo buenas propiedades dinámicas.
+Alta capacidad de sobrecarga / par.
+Rizado de par optimizado.
+Alto par dinámico a altas velocidades.
+</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://imanes-de-neodimio.com/showimg.php?iid=1038" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">SERVOMOTOR DE IMANES PERMANENTES</h5>
+          <p class="card-text" style="text-align: justify">La aplicación industrial de dichos motores esta desarrollandose significativamente por multiples razones entre las que podemos mencionar : nuevos y mas potentes componentes magneticos para los motores como los imanes de tierras raras, reduccion de costo de los motores y los equipos electronicos necesarios para el control de los mismos</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+<div class="content container">
+    <div class="card-deck">
+      <div class="card">
+        <img class="card-img-top" src="https://img.directindustry.es/images_di/photo-m2/6076-12180508.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">SERVOMOTOR Y MOTOR PASO A PASO</h5>
+          <p class="card-text" style="text-align: justify">Mayor exactitud en la posición y repetición de los movimientos.
+Error de paso inferior al 5%.
+Perfecta respuesta en arranque y parada.
+Confiable y duradero, ya que no existe contacto de escobillas.
+Ángulo de rotación proporcional a los pulsos de entrada.
+Gran rango de velocidades de rotación, ya que responde a la frecuencia de pulsos de entrada digitales.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://img.directindustry.es/images_di/photo-g/9305-13211693.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">SERVOMOTOR COMPACTO</h5>
+          <p class="card-text">AC DC
+3 fases
+Tipo
+síncrono
+Voltaje
+400V
+Tipo de protección
+IP65
+Otras características
+con freno, refrigerado por aire, refrigerado por agua, con imán permanente, compacto, de alto par
+Par
+Mín.: 2,7 Nm (1,9914 ft.lb)
+
+Máx.: 126 Nm (92,9328 ft.lb)
+
+Potencia
+Mín.: 0,5 kW (0,68 hp)
+
+Máx.: 18 kW (24,473 hp)
+
+Velocidad de rotación
+Mín.: 850 rpm (5.340,71 rad.min-1)
+
+Máx.: 4.000 rpm (25.132,74 rad.min-1)
+
+</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+        <div class="card">
+        <img class="card-img-top" src="https://sc01.alicdn.com/kf/HTB1yXf6XInrK1RjSspkq6yuvXXaP/221816893/HTB1yXf6XInrK1RjSspkq6yuvXXaP.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">SERVOMOTOR COMPACTO</h5>
+          <p class="card-text">Lugar del origen:
+Guangdong, China
+Marca:
+BOBET
+Número de Modelo:
+8DNMA2-0001DKAM
+Potencia de salida:
+1000 W
+Tipo:
+SERVO MOTOR
+Frecuencia:
+50/60Hz
+Fase:
+Tres fases
+Certificación:
+CCC, CE, Rohs
+Característica de protección:
+A prueba de goteo
+Voltaje CA:
+208-230 / 240 V
+Velocidad:
+3000 RPM
+Velocidad máxima:
+5000 rpm
+Par nominal:
+3.18NM
+Corriente nominal:
+5.3A
+
+</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+      </div>
+    </div>
+</div>
+
+</div>
+    <hr class="featurette-divider">
+<br>
+    <footer class="navbar navbar-dark bg-dark site-header sticky-top py-1">
+    <p class="float-right"><a href="{% url 'home' %}">Regresar al inicio</a></p>
+    <p style="color:white">&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+</body>
+
+</html>
